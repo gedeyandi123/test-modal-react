@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.App button {
+  padding: 13px 29px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: crimson;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-container {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d8dce3;
+  border-radius: 0.5rem;
+  background-color: #f7f8fa;
+}
+
+.modal-header {
+  position: relative;
+  background: #fff;
+  padding: 0 0.8rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 4rem;
+}
+
+.modal-footer {
+  position: relative;
+  background: #fff;
+  padding: 0 0.8rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 4rem;
+}
+
+.modal-body {
+  flex-grow: 1;
+  border-top: 2px solid #d8dce3;
+  border-bottom: 2px solid #d8dce3;
+  padding: 0 1.5rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.cross-btn {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: 0;
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.cross-btn:hover,
+.cross-btn:focus {
+  color: #e439ef;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close-btn {
+  background-color: rgb(77, 144, 255);
+  color: rgb(247, 248, 250);
+  font-size: 14px;
+  border-radius: 0.3rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(43, 123, 255);
+  cursor: pointer;
+  margin: 0.8rem 0;
+  padding: 0.5rem 1rem;
+}

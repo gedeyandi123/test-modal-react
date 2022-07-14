@@ -26,7 +26,7 @@ const Modal = ({
 
   useDisableBodyScroll(show);
 
-  useKeypress("Escape", onClose);
+  useKeypress("Escape", show, onClose);
 
   const closeOnOutsideClicked = (e) => {
     if (e.target === modalRef.current) {

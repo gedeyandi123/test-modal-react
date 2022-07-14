@@ -11,8 +11,8 @@ through the cites of the word in classical literature, discovered the
 undoubtable source.`;
 
 // CHOOSE OPTION 1 OR 2 FOR DIFFERENT STYLE FOR CREATE MODAL COMPONENT
-// const OPTION = 1;
-const OPTION = 2;
+const OPTION = 1;
+// const OPTION = 2;
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false);

@@ -20,7 +20,7 @@ const ModalRender = ({ item }) => {
 const Modal = ({ children = null, show = false, onClose = () => null }) => {
   useDisableBodyScroll(show);
 
-  useKeypress("Escape", onClose);
+  useKeypress("Escape", show, onClose);
 
   return ReactDOM.createPortal(
     <>

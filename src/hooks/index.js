@@ -10,9 +10,9 @@ const useDisableBodyScroll = (open) => {
   }, [open]);
 };
 
-const useKeypress = (key, action) => {
+const useKeypress = (key, show, action) => {
   useEffect(() => {
-    const onKeyDown = (e) => e.key === key && action();
+    const onKeyDown = (e) => e.key === key && show && action();
     document.body.addEventListener("keydown", onKeyDown);
     return () => document.body.removeEventListener("keydown", onKeyDown);
   });
